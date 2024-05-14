@@ -19,6 +19,10 @@ body {
   position: relative;
 }
 
+.select-control.active > .select-input > input {
+  border-color: green;
+}
+ 
 .select-control.active > .dropdown-panel {
   display: block;
 }
@@ -63,11 +67,11 @@ body {
   border: 1px solid black;
   border-radius: 8px;
   color: black;
-  margin-top: 15px;
   position: absolute;
   width: 100%;
   z-index: 99999;
   padding: 16px;
+  top: calc(100% + 8px);
 }
 
 .dropdown-panel > .search > input {
@@ -80,7 +84,7 @@ body {
 }
 
 .dropdown-panel > .search > input:focus {
-  border-color: blue;
+  border-color: green;
 }
 
 .dropdown-panel > .dropdown-options {
@@ -104,4 +108,17 @@ body {
 .dropdown-panel > .dropdown-options > li:hover {
   background-color: black;
   color: white;
+}
+
+#no-result {
+  display: none;
+  font-style: italic;
+  cursor: not-allowed;
+  color: grey;
+  border-bottom: none;
+}
+
+#no-result:hover {
+  background-color: inherit;
+  color: inherit;
 }
