@@ -7,7 +7,9 @@ const dropdownOptionList = document.querySelectorAll('.dropdown-options > li:not
 const dropdownPanel = document.querySelector('#dropdown-panel');
 const noResult = document.querySelector('#no-result');
 
+
 selectInput.addEventListener('click', () => {
+    console.log(selectControl.getClientRects());
     selectControl.classList.toggle('active');
     noResult.style.display = 'none';
 });
