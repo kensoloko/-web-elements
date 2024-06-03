@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom checkbox</title>
+    <link rel="stylesheet" href="./assets/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <label class="custom-checkbox">
+          <input type="checkbox" name="checkbox" />
+          <span class="checkbox--label">Custom checkbox</span>
+        </label>
+
+        <label class="custom-checkbox">
+          <input type="checkbox" name="checkbox-checked" checked />
+          <span class="checkbox--label">Custom checkbox - checked</span>
+        </label>
+
+        <label class="custom-checkbox custom-checkbox--disabled">
+          <input type="checkbox" name="checkbox-disabled" disabled />
+          <span class="checkbox--label">Custom checkbox Disabled</span>
+        </label>
+
+        <label class="custom-checkbox custom-checkbox--disabled">
+          <input
+            type="checkbox"
+            name="checkbox-disabled-checked"
+            checked
+            disabled
+          />
+          <span class="checkbox--label"
+            >Custom checkbox Disabled - checked</span
+          >
+        </label>
+      </div>
+    </div>
+  </body>
+</html>
